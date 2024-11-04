@@ -1,0 +1,30 @@
+Pravidlo 1.
+
+testovaci soubor musi zacinat nebo koncit slovem test
+
+Testovaci funkce nebo metoda musi zacinam slovem test
+
+Testovaci trida musi zacinat slovem Test
+
+def test_sum():
+    pass
+
+class TestCalculator:
+    pass
+
+Testy se spousti pomoci prikazu pytest
+Kdyz si chci spustit jenom jeden (nebo vice) soubor(u) pytest [nazev_souboru].py [nazev_dalsiho_souboru].py
+kdyz chci spustit jenom jeden test pytest [nazev_souboru].py::nazev_funkce
+pytest nazev_slozky
+
+a pokud potrebuju dalsi napovedu tak pytest -v (v jako verbose)
+v testu pouzivam slovicko assert a na jednu stranu (vlevo) se dava vystup treba z funkce
+v pravo se dava hardcoded hodnota kterou ja ocekavam
+do assertu muzu davat int ale taky list nebo i slovnik a ono mi to porovna hodnoty
+
+fixtures
+- setup - na zacatku testu
+- teardown - na konci testu
+- scope - function (default), session
+- nazev parametru se musi jmenovat jako nazev fixture
+
